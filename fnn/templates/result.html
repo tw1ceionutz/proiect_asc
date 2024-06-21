@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malware Detection Result</title>
+</head>
+<body>
+    <h1>Malware Detection Result</h1>
+    <p>The uploaded C program is {% if prediction == 1 %}malicious{% else %}benign{% endif %}.</p>
+    <button onclick="window.location.href='/';">Verify another one</button>
+    <img src="{{ url_for('static', filename='images/p8K6PQ.png') }}" alt="Result">
+</body>
+</html>
